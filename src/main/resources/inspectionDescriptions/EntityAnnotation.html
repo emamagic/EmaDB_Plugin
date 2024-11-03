@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity Annotation Inspection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Entity Annotation Inspection</h1>
+
+<h2>Description</h2>
+<p>
+    The <strong>Entity Annotation Inspection</strong> validates that classes marked with the <code>@Entity</code> annotation meet certain criteria, ensuring consistency in your project’s entity configuration.
+</p>
+
+<h2>Validation Rules</h2>
+<p>This inspection verifies the following:</p>
+<ul>
+    <li><code>@Entity</code> must be applied only to classes, not interfaces or enums.</li>
+    <li>Classes annotated with <code>@Entity</code> must have a public no-argument constructor.</li>
+</ul>
+
+<h2>Usage</h2>
+<p>
+    This inspection helps maintain correct configuration and structure of your entity classes, allowing for better reliability and easier management of entities in your application.
+</p>
+</body>
+</html>

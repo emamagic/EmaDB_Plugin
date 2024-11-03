@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Annotation Inspection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Id Annotation Inspection</h1>
+
+<h2>Description</h2>
+<p>
+    The <strong>Id Annotation Inspection</strong> ensures that fields annotated with <code>@Id</code> meet required criteria, providing reliable validation for primary key fields in your entity classes.
+</p>
+
+<h2>Validation Rules</h2>
+<p>This inspection checks the following:</p>
+<ul>
+    <li>Only one field per class may be annotated with <code>@Id</code>.</li>
+    <li>For PostgreSQL databases, the <code>@Id</code> field type must be either <code>Integer</code> or <code>String</code>.</li>
+    <li>For MongoDB databases, the <code>@Id</code> field type must be <code>org.bson.types.ObjectId</code>.</li>
+</ul>
+
+<h2>Usage</h2>
+<p>
+    This inspection helps ensure that primary key fields in your entity classes conform to database-specific requirements, promoting database integrity and data consistency.
+</p>
+</body>
+</html>

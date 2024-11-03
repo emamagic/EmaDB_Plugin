@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.emamagic.EmaDBPlugin</id>
+    <name>EmaDB</name>
+    <version>1.0</version>
+    <vendor>Emamagic</vendor>
+
+    <depends>com.intellij.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection implementationClass="com.emamagic.ConfigAnnotationInspection"
+                         language="JAVA"
+                         displayName="Config annotation validation"
+                         groupName="EmaDB"
+                         level="ERROR"/>
+        <localInspection implementationClass="com.emamagic.EntityAnnotationInspection"
+                         language="JAVA"
+                         displayName="Entity annotation validation"
+                         groupName="EmaDB"
+                         level="ERROR"/>
+        <localInspection implementationClass="com.emamagic.IdAnnotationInspection"
+                         language="JAVA"
+                         displayName="Id annotation validation"
+                         groupName="EmaDB"
+                         level="ERROR"/>
+    </extensions>
+</idea-plugin>
